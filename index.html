@@ -9,21 +9,31 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Estilos propios CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
   </head>
   <body>
     <section class="container-fluid bg-body d-flex justify-content-center align-items-center">
         <h1 class="display-4">Bienvenido!</h1>
     </section>
-    <section class="container">
-        <p class="mt-5">Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías.</p>
-        <p>Aunque no posee actualmente fuentes para justificar sus hipótesis, el profesor de filología clásica Richard McClintock asegura que su uso se remonta a los impresores de comienzos del siglo XVI.1 Su uso en algunos editores de texto muy conocidos en la actualidad ha dado al texto lorem ipsum nueva popularidad.
+    <!-- ******************************************************************************************** -->
+ <div class="container">
+        <div class="card card-container">
+            <img id="profile-img" class="profile-img-card" src="img/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form method="post" accept-charset="utf-8" action="login.php" name="loginform" autocomplete="off" role="form" class="form-signin">
+						<div class="alert alert-danger alert-dismissible" role="alert">
+						    <strong>Error!</strong>
+						</div>
+						<div class="alert alert-success alert-dismissible" role="alert">
+						    <strong>Aviso!</strong>
+						</div>
+                <span id="reauth-email" class="reauth-email"></span>
+                <input class="form-control" placeholder="Usuario" name="user_name" type="text" value="" autofocus="" required>
+                <input class="form-control" placeholder="Contraseña" name="user_password" type="password" value="" autocomplete="off" required>
+                <button type="submit" class="btn btn-lg btn-success btn-block btn-signin" name="login" id="submit">Iniciar Sesión</button>
+            </form><!-- /form -->
 
-El texto en sí no tiene sentido, aunque no es completamente aleatorio, sino que deriva de un texto de Cicerón en lengua latina, a cuyas palabras se les han eliminado sílabas o letras. El significado del texto no tiene importancia, ya que solo es una demostración o prueba, pero se inspira en la obra de Cicerón De finibus bonorum et malorum (Sobre los límites del bien y del mal) que comienza con:</p>
-    </section>
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
   </body>
 </html>
