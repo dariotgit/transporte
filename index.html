@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   </head>
   <body>
     <section class="container-fluid bg-body d-flex justify-content-center align-items-center">
@@ -18,15 +19,15 @@
         <div class="card card-container">
             <img id="profile-img" class="profile-img-card" src="images/avatar.png" />
             <p id="profile-name" class="profile-name-card"></p>
-            <form method="post" accept-charset="utf-8" action="login.php" name="loginform" autocomplete="off" role="form" class="form-signin">
+            <form method="post" accept-charset="utf-8" action="form1.php" name="loginform" autocomplete="off" role="form" class="form-signin">
                 <span id="reauth-email" class="reauth-email"></span>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
-                     <input class="form-control" placeholder="Usuario" name="user_name" type="text" value="" autofocus="" required>
+                     <input class="form-control" placeholder="Usuario" name="user_name" type="text" value="" autofocus="" >
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                    <input class="form-control" placeholder="Contraseña" name="user_password" type="password" value="" autocomplete="off" required>
+                    <input class="form-control" placeholder="Contraseña" name="user_password" type="password" value="" autocomplete="off" >
                 </div>
                 <br>
                 <button type="submit" class="btn btn-lg btn-success btn-block btn-signin" name="login" id="submit">Iniciar Sesión</button>
